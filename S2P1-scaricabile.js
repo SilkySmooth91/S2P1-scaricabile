@@ -87,7 +87,7 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-{
+/*
 let totalShoppingCart = parseFloat(prompt("Totale carrello"))
 let shipping = 10
 let finalPrice = totalShoppingCart + shipping
@@ -99,7 +99,7 @@ if (totalShoppingCart > 50) {
   finalPrice = totalShoppingCart + shipping
   alert("Spese di spedizione: 10€" + " " + "Il costo totale è: " + finalPrice + "€")
 }
-}
+
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -107,6 +107,18 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+/*
+totalShoppingCart = totalShoppingCart - (totalShoppingCart * 0.20) 
+if (totalShoppingCart > 50) {
+  finalPrice = totalShoppingCart
+  alert("Congrats! Free shipping!" + " " + "Il costo totale è:" + finalPrice + "€")
+  
+} else {
+  finalPrice = totalShoppingCart + shipping
+  alert("Spese di spedizione: 10€" + " " + "Il costo totale è: " + finalPrice + "€")
+}
+
+ 
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
@@ -115,7 +127,23 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let gender
+let isMale = true
+gender = isMale ? (gender = "male") : (gender = "female")
+console.log(gender)
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
+for (ab = 0; ab <= 100; ab++) {
+  if ((ab % 3 === 0) && (ab % 5 === 0)) {
+    console.log("FizzBuzz")
+  } else
+  if (ab % 3 === 0) {
+      console.log("Fizz")
+  } else 
+  if (ab % 5 === 0) {
+    console.log("Buzz")
+  }  else 
+  console.log(ab)
+}
